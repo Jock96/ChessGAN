@@ -1,5 +1,7 @@
 ﻿namespace UI.Commands
 {
+    using System.Windows;
+
     using UI.ViewModels;
 
     /// <summary>
@@ -13,7 +15,8 @@
         /// <param name="parameter">Параметр.</param>
         protected override void Execute(MainWindowVM parameter)
         {
-            throw new System.NotImplementedException();
+            MessageBox.Show("Команда не реализована!",
+                "Внимание", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

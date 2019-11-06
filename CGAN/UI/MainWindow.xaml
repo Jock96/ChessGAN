@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         xmlns:vm="clr-namespace:UI.ViewModels"
+        xmlns:control="clr-namespace:UI.Controls"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance Type=vm:MainWindowVM, IsDesignTimeCreatable=False}"
-        Title="Chess" Height="500" Width="1000" WindowStartupLocation="CenterScreen">
+        Title="Chess" Height="500" Width="750" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.25*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        <control:ChessControl Grid.Column="1"/>
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.25*"/>

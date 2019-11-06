@@ -28,7 +28,7 @@
 
             // TODO: убрать после реализации.
             var result = MessageBox.Show("Команда не реализована!",
-                "Внимание", MessageBoxButton.OK, MessageBoxImage.Hand);
+                "Внимание", MessageBoxButton.OK, MessageBoxImage.Information);
 
             if (result.Equals(MessageBoxResult.OK))
                 parameter.CloseOwnerWindow();

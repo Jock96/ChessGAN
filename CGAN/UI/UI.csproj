@@ -58,12 +58,19 @@
     <Compile Include="Commands\AcceptTeachParamsCommand.cs" />
     <Compile Include="Commands\PlayCommand.cs" />
     <Compile Include="Commands\TeachCommand.cs" />
+    <Compile Include="Controls\ChessControl.xaml.cs">
+      <DependentUpon>ChessControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\BaseVM.cs" />
     <Compile Include="ViewModels\MainWindowVM.cs" />
     <Compile Include="ViewModels\TeachWindowVM.cs" />
     <Compile Include="Windows\TeachWindow.xaml.cs">
       <DependentUpon>TeachWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Controls\ChessControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
