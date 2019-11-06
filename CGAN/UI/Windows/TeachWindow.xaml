@@ -1,0 +1,32 @@
+﻿<Window x:Class="UI.Windows.TeachWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI.Windows"
+        xmlns:vm="clr-namespace:UI.ViewModels"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance Type=vm:TeachWindowVM, IsDesignTimeCreatable=False}"
+        Title="Параметры обучения" Height="100" Width="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Content="Количество итераций:" 
+               HorizontalAlignment="Center" HorizontalContentAlignment="Center"
+               VerticalAlignment="Center"/>
+        <TextBox Grid.Column="1" HorizontalContentAlignment="Center"
+                 VerticalAlignment="Center" MaxLength="5"
+                 Text="{Binding IterationCount}"
+                 Margin="0,0,100,0"/>
+        <Button Grid.Row="1" Margin="20,5" Content="Принять"
+                Command="{Binding AcceptTeachParamsCommand}"
+                CommandParameter="{Binding}"/>
+    </Grid>
+</Window>

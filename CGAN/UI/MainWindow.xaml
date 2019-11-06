@@ -7,8 +7,22 @@
         xmlns:vm="clr-namespace:UI.ViewModels"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance Type=vm:MainWindowVM, IsDesignTimeCreatable=False}"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Chess" Height="500" Width="1000" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Margin="40, 20" Content="Обучить" 
+                    Command="{Binding TeachCommand}" CommandParameter="{Binding}"/>
+            <Button Grid.Row="1" Margin="40, 20" Content="Играть"
+                    Command="{Binding PlayCommand}" CommandParameter="{Binding}"/>
+        </Grid>
     </Grid>
 </Window>
