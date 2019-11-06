@@ -34,10 +34,5 @@
         /// Пешка.
         /// </summary>
         Pawn,
-
-        /// <summary>
-        /// Нет фигуры.
-        /// </summary>
-        None
     }
 }

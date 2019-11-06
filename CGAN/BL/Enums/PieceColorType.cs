@@ -14,10 +14,5 @@
         /// Белый.
         /// </summary>
         White,
-
-        /// <summary>
-        /// Без цвета.
-        /// </summary>
-        None
     }
 }
