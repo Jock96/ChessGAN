@@ -35,8 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -56,12 +63,16 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\AcceptTeachParamsCommand.cs" />
+    <Compile Include="Commands\CheckTurnCommand.cs" />
     <Compile Include="Commands\PlayCommand.cs" />
+    <Compile Include="Commands\SendMoveParametersCommand.cs" />
     <Compile Include="Commands\TeachCommand.cs" />
     <Compile Include="Controls\ChessControl.xaml.cs">
       <DependentUpon>ChessControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utils\ChessFieldWorker.cs" />
     <Compile Include="ViewModels\BaseVM.cs" />
+    <Compile Include="ViewModels\ChessControlVM.cs" />
     <Compile Include="ViewModels\MainWindowVM.cs" />
     <Compile Include="ViewModels\TeachWindowVM.cs" />
     <Compile Include="Windows\TeachWindow.xaml.cs">
@@ -108,6 +119,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -117,7 +129,27 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <Folder Include="Module\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{9C60B9A6-4DAD-44A8-8CA2-75B30D33C1F3}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BlackBishop.bmp" />
+    <Resource Include="Resources\BlackKing.bmp" />
+    <Resource Include="Resources\BlackKnight.bmp" />
+    <Resource Include="Resources\BlackPawn.bmp" />
+    <Resource Include="Resources\BlackQueen.bmp" />
+    <Resource Include="Resources\BlackRook.bmp" />
+    <Resource Include="Resources\WhiteBishop.bmp" />
+    <Resource Include="Resources\WhiteKing.bmp" />
+    <Resource Include="Resources\WhiteKnight.bmp" />
+    <Resource Include="Resources\WhitePawn.bmp" />
+    <Resource Include="Resources\WhiteQueen.bmp" />
+    <Resource Include="Resources\WhiteRook.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

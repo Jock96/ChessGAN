@@ -14,7 +14,7 @@
             <ColumnDefinition Width="0.25*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <control:ChessControl Grid.Column="1"/>
+        <control:ChessControl Grid.Column="1" DataContext="{Binding ChessControlVM}"/>
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.25*"/>
@@ -25,6 +25,9 @@
                     Command="{Binding TeachCommand}" CommandParameter="{Binding}"/>
             <Button Grid.Row="1" Margin="40, 20" Content="Играть"
                     Command="{Binding PlayCommand}" CommandParameter="{Binding}"/>
+            <!--<Button Grid.Row="2" Content="TestCommand" 
+                    Command="{Binding SendMoveParametersCommand}"
+                    CommandParameter="{Binding}"/>-->
         </Grid>
     </Grid>
 </Window>

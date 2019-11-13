@@ -3,6 +3,7 @@
     using UI.ViewModels;
 
     using System.Windows;
+    using System;
 
     /// <summary>
     /// Команла принятия параметров.

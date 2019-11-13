@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UI.Controls"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="400" Background="White"
              BorderBrush="Black">
@@ -34,77 +35,684 @@
         </Grid.ColumnDefinitions>
         
         <!--#region Поле-->
-        <Label x:Name="A8" Grid.Row="1" Grid.Column="1" Background="White"/>
-        <Label x:Name="B8" Grid.Row="1" Grid.Column="2" Background="Gray"/>
-        <Label x:Name="C8" Grid.Row="1" Grid.Column="3" Background="White"/>
-        <Label x:Name="D8" Grid.Row="1" Grid.Column="4" Background="Gray"/>
-        <Label x:Name="E8" Grid.Row="1" Grid.Column="5" Background="White"/>
-        <Label x:Name="F8" Grid.Row="1" Grid.Column="6" Background="Gray"/>
-        <Label x:Name="G8" Grid.Row="1" Grid.Column="7" Background="White"/>
-        <Label x:Name="H8" Grid.Row="1" Grid.Column="8" Background="Gray"/>
+        <Label Grid.Row="1" Grid.Column="1" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=A8}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="A8" Grid.Row="1" Panel.ZIndex="1" Grid.Column="1" Source="{Binding A8}"/>
 
-        <Label x:Name="A7" Grid.Row="2" Grid.Column="1" Background="Gray"/>
-        <Label x:Name="B7" Grid.Row="2" Grid.Column="2" Background="White"/>
-        <Label x:Name="C7" Grid.Row="2" Grid.Column="3" Background="Gray"/>
-        <Label x:Name="D7" Grid.Row="2" Grid.Column="4" Background="White"/>
-        <Label x:Name="E7" Grid.Row="2" Grid.Column="5" Background="Gray"/>
-        <Label x:Name="F7" Grid.Row="2" Grid.Column="6" Background="White"/>
-        <Label x:Name="G7" Grid.Row="2" Grid.Column="7" Background="Gray"/>
-        <Label x:Name="H7" Grid.Row="2" Grid.Column="8" Background="White"/>
+        <Label Grid.Row="1" Grid.Column="2" Background="Gray"/>
+        <Label Grid.Row="1" Grid.Column="2" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=B8}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="B8" Grid.Row="1" Panel.ZIndex="1" Grid.Column="2" Source="{Binding B8}"/>
 
-        <Label x:Name="A6" Grid.Row="3" Grid.Column="1" Background="White"/>
-        <Label x:Name="B6" Grid.Row="3" Grid.Column="2" Background="Gray"/>
-        <Label x:Name="C6" Grid.Row="3" Grid.Column="3" Background="White"/>
-        <Label x:Name="D6" Grid.Row="3" Grid.Column="4" Background="Gray"/>
-        <Label x:Name="E6" Grid.Row="3" Grid.Column="5" Background="White"/>
-        <Label x:Name="F6" Grid.Row="3" Grid.Column="6" Background="Gray"/>
-        <Label x:Name="G6" Grid.Row="3" Grid.Column="7" Background="White"/>
-        <Label x:Name="H6" Grid.Row="3" Grid.Column="8" Background="Gray"/>
+        <Label Grid.Row="1" Grid.Column="3" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=C8}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="C8" Grid.Row="1" Panel.ZIndex="1" Grid.Column="3" Source="{Binding C8}"/>
 
-        <Label x:Name="A5" Grid.Row="4" Grid.Column="1" Background="Gray"/>
-        <Label x:Name="B5" Grid.Row="4" Grid.Column="2" Background="White"/>
-        <Label x:Name="C5" Grid.Row="4" Grid.Column="3" Background="Gray"/>
-        <Label x:Name="D5" Grid.Row="4" Grid.Column="4" Background="White"/>
-        <Label x:Name="E5" Grid.Row="4" Grid.Column="5" Background="Gray"/>
-        <Label x:Name="F5" Grid.Row="4" Grid.Column="6" Background="White"/>
-        <Label x:Name="G5" Grid.Row="4" Grid.Column="7" Background="Gray"/>
-        <Label x:Name="H5" Grid.Row="4" Grid.Column="8" Background="White"/>
+        <Label Grid.Row="1" Grid.Column="4" Background="Gray"/>
+        <Label Grid.Row="1" Grid.Column="4" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=D8}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="D8" Panel.ZIndex="1" Grid.Row="1" Grid.Column="4" Source="{Binding D8}"/>
 
-        <Label x:Name="A4" Grid.Row="5" Grid.Column="1" Background="White"/>
-        <Label x:Name="B4" Grid.Row="5" Grid.Column="2" Background="Gray"/>
-        <Label x:Name="C4" Grid.Row="5" Grid.Column="3" Background="White"/>
-        <Label x:Name="D4" Grid.Row="5" Grid.Column="4" Background="Gray"/>
-        <Label x:Name="E4" Grid.Row="5" Grid.Column="5" Background="White"/>
-        <Label x:Name="F4" Grid.Row="5" Grid.Column="6" Background="Gray"/>
-        <Label x:Name="G4" Grid.Row="5" Grid.Column="7" Background="White"/>
-        <Label x:Name="H4" Grid.Row="5" Grid.Column="8" Background="Gray"/>
+        <Label Grid.Row="1" Grid.Column="5" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=E8}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="E8" Panel.ZIndex="1" Grid.Row="1" Grid.Column="5" Source="{Binding E8}"/>
 
-        <Label x:Name="A3" Grid.Row="6" Grid.Column="1" Background="Gray"/>
-        <Label x:Name="B3" Grid.Row="6" Grid.Column="2" Background="White"/>
-        <Label x:Name="C3" Grid.Row="6" Grid.Column="3" Background="Gray"/>
-        <Label x:Name="D3" Grid.Row="6" Grid.Column="4" Background="White"/>
-        <Label x:Name="E3" Grid.Row="6" Grid.Column="5" Background="Gray"/>
-        <Label x:Name="F3" Grid.Row="6" Grid.Column="6" Background="White"/>
-        <Label x:Name="G3" Grid.Row="6" Grid.Column="7" Background="Gray"/>
-        <Label x:Name="H3" Grid.Row="6" Grid.Column="8" Background="White"/>
+        <Label Grid.Row="1" Grid.Column="6" Background="Gray"/>
+        <Label Grid.Row="1" Grid.Column="6" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=F8}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="F8" Panel.ZIndex="1" Grid.Row="1" Grid.Column="6" Source="{Binding F8}"/>
 
-        <Label x:Name="A2" Grid.Row="7" Grid.Column="1" Background="White"/>
-        <Label x:Name="B2" Grid.Row="7" Grid.Column="2" Background="Gray"/>
-        <Label x:Name="C2" Grid.Row="7" Grid.Column="3" Background="White"/>
-        <Label x:Name="D2" Grid.Row="7" Grid.Column="4" Background="Gray"/>
-        <Label x:Name="E2" Grid.Row="7" Grid.Column="5" Background="White"/>
-        <Label x:Name="F2" Grid.Row="7" Grid.Column="6" Background="Gray"/>
-        <Label x:Name="G2" Grid.Row="7" Grid.Column="7" Background="White"/>
-        <Label x:Name="H2" Grid.Row="7" Grid.Column="8" Background="Gray"/>
+        <Label Grid.Row="1" Grid.Column="7" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=G8}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="G8" Panel.ZIndex="1" Grid.Row="1" Grid.Column="7" Source="{Binding G8}"/>
 
-        <Label x:Name="A1" Grid.Row="8" Grid.Column="1" Background="Gray"/>
-        <Label x:Name="B1" Grid.Row="8" Grid.Column="2" Background="White"/>
-        <Label x:Name="C1" Grid.Row="8" Grid.Column="3" Background="Gray"/>
-        <Label x:Name="D1" Grid.Row="8" Grid.Column="4" Background="White"/>
-        <Label x:Name="E1" Grid.Row="8" Grid.Column="5" Background="Gray"/>
-        <Label x:Name="F1" Grid.Row="8" Grid.Column="6" Background="White"/>
-        <Label x:Name="G1" Grid.Row="8" Grid.Column="7" Background="Gray"/>
-        <Label x:Name="H1" Grid.Row="8" Grid.Column="8" Background="White"/>
+        <Label Grid.Row="1" Grid.Column="8" Background="Gray"/>
+        <Label Grid.Row="1" Grid.Column="8" Background="Gray" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=H8}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="H8" Panel.ZIndex="1" Grid.Row="1" Grid.Column="8" Source="{Binding H8}"/>
+
+
+        <Label Grid.Row="2" Grid.Column="1" Background="Gray"/>
+        <Label Grid.Row="2" Grid.Column="1" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=A7}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="A7" Panel.ZIndex="1" Grid.Row="2" Grid.Column="1" Source="{Binding A7}"/>
+
+        <Label Grid.Row="2" Grid.Column="2" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=B7}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="B7" Panel.ZIndex="1" Grid.Row="2" Grid.Column="2" Source="{Binding B7}"/>
+
+        <Label Grid.Row="2" Grid.Column="3" Background="Gray"/>
+        <Label Grid.Row="2" Grid.Column="3" Background="Gray" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=C7}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="C7" Panel.ZIndex="1" Grid.Row="2" Grid.Column="3" Source="{Binding C7}"/>
+
+        <Label Grid.Row="2" Grid.Column="4" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=D7}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="D7" Panel.ZIndex="1" Grid.Row="2" Grid.Column="4" Source="{Binding D7}"/>
+
+        <Label Grid.Row="2" Grid.Column="5" Background="Gray"/>
+        <Label Grid.Row="2" Grid.Column="5" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=E7}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="E7" Panel.ZIndex="1" Grid.Row="2" Grid.Column="5" Source="{Binding E7}"/>
+
+        <Label Grid.Row="2" Grid.Column="6" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=F7}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="F7" Panel.ZIndex="1" Grid.Row="2" Grid.Column="6" Source="{Binding F7}"/>
+
+        <Label Grid.Row="2" Grid.Column="7" Background="Gray"/>
+        <Label Grid.Row="2" Grid.Column="7" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=G7}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="G7" Panel.ZIndex="1" Grid.Row="2" Grid.Column="7" Source="{Binding G7}"/>
+
+        <Label Grid.Row="2" Grid.Column="8" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=H7}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="H7" Panel.ZIndex="1" Grid.Row="2" Grid.Column="8" Source="{Binding H7}"/>
+
+
+        <Label Grid.Row="3" Grid.Column="1" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=A6}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="A6" Panel.ZIndex="1" Grid.Row="3" Grid.Column="1" Source="{Binding A6}"/>
+
+        <Label Grid.Row="3" Grid.Column="2" Background="Gray"/>
+        <Label Grid.Row="3" Grid.Column="2" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=B6}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="B6" Panel.ZIndex="1" Grid.Row="3" Grid.Column="2" Source="{Binding B6}"/>
+
+        <Label Grid.Row="3" Grid.Column="3" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=C6}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="C6" Panel.ZIndex="1" Grid.Row="3" Grid.Column="3" Source="{Binding C6}"/>
+
+        <Label Grid.Row="3" Grid.Column="4" Background="Gray"/>
+        <Label Grid.Row="3" Grid.Column="4" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=D6}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="D6" Panel.ZIndex="1" Grid.Row="3" Grid.Column="4" Source="{Binding D6}"/>
+
+        <Label Grid.Row="3" Grid.Column="5" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=E6}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="E6" Panel.ZIndex="1" Grid.Row="3" Grid.Column="5" Source="{Binding E6}"/>
+
+        <Label Grid.Row="3" Grid.Column="6" Background="Gray"/>
+        <Label Grid.Row="3" Grid.Column="6" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=F6}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="F6" Panel.ZIndex="1" Grid.Row="3" Grid.Column="6" Source="{Binding F6}"/>
+
+        <Label Grid.Row="3" Grid.Column="7" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=G6}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="G6" Panel.ZIndex="1" Grid.Row="3" Grid.Column="7" Source="{Binding G6}"/>
+
+        <Label Grid.Row="3" Grid.Column="8" Background="Gray"/>
+        <Label Grid.Row="3" Grid.Column="8" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=H6}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="H6" Panel.ZIndex="1" Grid.Row="3" Grid.Column="8" Source="{Binding H6}"/>
+
+
+        <Label Grid.Row="4" Grid.Column="1" Background="Gray"/>
+        <Label Grid.Row="4" Grid.Column="1" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=A5}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="A5" Panel.ZIndex="1" Grid.Row="4" Grid.Column="1" Source="{Binding A5}"/>
+
+        <Label Grid.Row="4" Grid.Column="2" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=B5}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="B5" Panel.ZIndex="1" Grid.Row="4" Grid.Column="2" Source="{Binding B5}"/>
+
+        <Label Grid.Row="4" Grid.Column="3" Background="Gray"/>
+        <Label Grid.Row="4" Grid.Column="3" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=C5}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="C5" Panel.ZIndex="1" Grid.Row="4" Grid.Column="3" Source="{Binding C5}"/>
+
+        <Label Grid.Row="4" Grid.Column="4" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=D5}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="D5" Panel.ZIndex="1" Grid.Row="4" Grid.Column="4" Source="{Binding D5}"/>
+
+        <Label Grid.Row="4" Grid.Column="5" Background="Gray"/>
+        <Label Grid.Row="4" Grid.Column="5" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=E5}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="E5" Panel.ZIndex="1" Grid.Row="4" Grid.Column="5" Source="{Binding E5}"/>
+
+        <Label Grid.Row="4" Grid.Column="6" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=F5}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="F5" Panel.ZIndex="1" Grid.Row="4" Grid.Column="6" Source="{Binding F5}"/>
+
+        <Label Grid.Row="4" Grid.Column="7" Background="Gray"/>
+        <Label Grid.Row="4" Grid.Column="7" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=G5}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="G5" Panel.ZIndex="1" Grid.Row="4" Grid.Column="7" Source="{Binding G5}"/>
+
+        <Label Grid.Row="4" Grid.Column="8" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=H5}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="H5" Panel.ZIndex="1" Grid.Row="4" Grid.Column="8" Source="{Binding H5}"/>
+
+
+        <Label Grid.Row="5" Grid.Column="1" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=A4}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="A4" Panel.ZIndex="1" Grid.Row="5" Grid.Column="1" Source="{Binding A4}"/>
+
+        <Label Grid.Row="5" Grid.Column="2" Background="Gray"/>
+        <Label Grid.Row="5" Grid.Column="2" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=B4}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="B4" Panel.ZIndex="1" Grid.Row="5" Grid.Column="2" Source="{Binding B4}"/>
+
+        <Label Grid.Row="5" Grid.Column="3" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=C4}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="C4" Panel.ZIndex="1" Grid.Row="5" Grid.Column="3" Source="{Binding C4}"/>
+
+        <Label Grid.Row="5" Grid.Column="4" Background="Gray"/>
+        <Label Grid.Row="5" Grid.Column="4" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=D4}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="D4" Panel.ZIndex="1" Grid.Row="5" Grid.Column="4" Source="{Binding D4}"/>
+
+        <Label Grid.Row="5" Grid.Column="5" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=E4}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="E4" Panel.ZIndex="1" Grid.Row="5" Grid.Column="5" Source="{Binding E4}"/>
+
+        <Label Grid.Row="5" Grid.Column="6" Background="Gray"/>
+        <Label Grid.Row="5" Grid.Column="6" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=F4}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="F4" Panel.ZIndex="1" Grid.Row="5" Grid.Column="6" Source="{Binding F4}"/>
+
+        <Label Grid.Row="5" Grid.Column="7" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=G4}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="G4" Panel.ZIndex="1" Grid.Row="5" Grid.Column="7" Source="{Binding G4}"/>
+
+        <Label Grid.Row="5" Grid.Column="8" Background="Gray"/>
+        <Label Grid.Row="5" Grid.Column="8" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=H4}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="H4" Panel.ZIndex="1" Grid.Row="5" Grid.Column="8" Source="{Binding H4}"/>
+
+        <Label Grid.Row="6" Grid.Column="1" Background="Gray"/>
+        <Label Grid.Row="6" Grid.Column="1" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=A3}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="A3" Panel.ZIndex="1" Grid.Row="6" Grid.Column="1" Source="{Binding A3}"/>
+
+        <Label Grid.Row="6" Grid.Column="2" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=B3}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="B3" Panel.ZIndex="1" Grid.Row="6" Grid.Column="2" Source="{Binding B3}"/>
+
+        <Label Grid.Row="6" Grid.Column="3" Background="Gray"/>
+        <Label Grid.Row="6" Grid.Column="3" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=C3}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="C3" Panel.ZIndex="1" Grid.Row="6" Grid.Column="3" Source="{Binding C3}"/>
+
+        <Label Grid.Row="6" Grid.Column="4" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=D3}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="D3" Panel.ZIndex="1" Grid.Row="6" Grid.Column="4" Source="{Binding D3}"/>
+
+        <Label Grid.Row="6" Grid.Column="5" Background="Gray"/>
+        <Label Grid.Row="6" Grid.Column="5" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=E3}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="E3" Panel.ZIndex="1" Grid.Row="6" Grid.Column="5" Source="{Binding E3}"/>
+
+        <Label Grid.Row="6" Grid.Column="6" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=F3}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="F3" Panel.ZIndex="1" Grid.Row="6" Grid.Column="6" Source="{Binding F3}"/>
+
+        <Label Grid.Row="6" Grid.Column="7" Background="Gray"/>
+        <Label Grid.Row="6" Grid.Column="7" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=G3}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="G3" Panel.ZIndex="1" Grid.Row="6" Grid.Column="7" Source="{Binding G3}"/>
+
+        <Label Grid.Row="6" Grid.Column="8" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=H3}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="H3" Panel.ZIndex="1" Grid.Row="6" Grid.Column="8" Source="{Binding H3}"/>
+
+
+        <Label Grid.Row="7" Grid.Column="1" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=A2}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="A2" Panel.ZIndex="1" Grid.Row="7" Grid.Column="1" Source="{Binding A2}"/>
+
+        <Label Grid.Row="7" Grid.Column="2" Background="Gray"/>
+        <Label Grid.Row="7" Grid.Column="2" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=B2}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="B2" Panel.ZIndex="1" Grid.Row="7" Grid.Column="2" Source="{Binding B2}"/>
+
+        <Label Grid.Row="7" Grid.Column="3" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=C2}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="C2" Panel.ZIndex="1" Grid.Row="7" Grid.Column="3" Source="{Binding C2}"/>
+
+        <Label Grid.Row="7" Grid.Column="4" Background="Gray"/>
+        <Label Grid.Row="7" Grid.Column="4" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=D2}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="D2" Panel.ZIndex="1" Grid.Row="7" Grid.Column="4" Source="{Binding D2}"/>
+
+        <Label Grid.Row="7" Grid.Column="5" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=E2}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="E2" Panel.ZIndex="1" Grid.Row="7" Grid.Column="5" Source="{Binding E2}"/>
+
+        <Label Grid.Row="7" Grid.Column="6" Background="Gray"/>
+        <Label Grid.Row="7" Grid.Column="6" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=F2}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="F2" Panel.ZIndex="1" Grid.Row="7" Grid.Column="6" Source="{Binding F2}"/>
+
+        <Label Grid.Row="7" Grid.Column="7" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=G2}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="G2" Panel.ZIndex="1" Grid.Row="7" Grid.Column="7" Source="{Binding G2}"/>
+
+        <Label Grid.Row="7" Grid.Column="8" Background="Gray"/>
+        <Label Grid.Row="7" Grid.Column="8" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=H2}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="H2" Panel.ZIndex="1" Grid.Row="7" Grid.Column="8" Source="{Binding H2}"/>
+
+
+        <Label Grid.Row="8" Grid.Column="1" Background="Gray"/>
+        <Label Grid.Row="8" Grid.Column="1" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=A1}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="A1" Panel.ZIndex="1" Grid.Row="8" Grid.Column="1" Source="{Binding A1}"/>
+
+        <Label Grid.Row="8" Grid.Column="2" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=B1}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="B1" Panel.ZIndex="1" Grid.Row="8" Grid.Column="2" Source="{Binding B1}"/>
+
+        <Label Grid.Row="8" Grid.Column="3" Background="Gray"/>
+        <Label Grid.Row="8" Grid.Column="3" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=C1}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="C1" Panel.ZIndex="1" Grid.Row="8" Grid.Column="3" Source="{Binding C1}"/>
+
+        <Label Grid.Row="8" Grid.Column="4" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=D1}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="D1" Panel.ZIndex="1" Grid.Row="8" Grid.Column="4" Source="{Binding D1}"/>
+
+        <Label Grid.Row="8" Grid.Column="5" Background="Gray"/>
+        <Label Grid.Row="8" Grid.Column="5" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=E1}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="E1" Panel.ZIndex="1" Grid.Row="8" Grid.Column="5" Source="{Binding E1}"/>
+
+        <Label Grid.Row="8" Grid.Column="6" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=F1}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="F1" Panel.ZIndex="1" Grid.Row="8" Grid.Column="6" Source="{Binding F1}"/>
+
+        <Label Grid.Row="8" Grid.Column="7" Background="Gray"/>
+        <Label Grid.Row="8" Grid.Column="7" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=G1}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="G1" Panel.ZIndex="1" Grid.Row="8" Grid.Column="7" Source="{Binding G1}"/>
+
+        <Label Grid.Row="8" Grid.Column="8" Panel.ZIndex="2" Opacity="0.1">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding CheckTurnCommand}"
+                                           CommandParameter="{Binding ElementName=H1}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Label>
+        <Image x:Name="H1" Panel.ZIndex="1" Grid.Row="8" Grid.Column="8" Source="{Binding H1}"/>
+        
         <!--#endregion-->
         
         <!--#region Нумерация поля (вертикальная)-->

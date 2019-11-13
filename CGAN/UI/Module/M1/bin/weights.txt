@@ -1,0 +1,90 @@
+GreKo 2018.08 evaluation weights file
+
+Mid_Pawn -27 9 -14 -3 -11 -38
+Mid_PawnPassed 17 -4 61 33 8 3
+Mid_PawnPassedFree 7 -5 53 33 -5 -20
+Mid_PawnPassedBlocked 6 10 32 11 -3 -13
+Mid_PawnPassedConnected -2 2 83 41 11 7
+Mid_PawnPassedSquare 38 -25 29 3 3 -31
+Mid_PawnPassedKingDist -18 -30
+Mid_PawnDoubledIsolated -11 11 21 45 -10 -2
+Mid_PawnDoubled 34 -6 -36 37 -54 2
+Mid_PawnIsolated -5 3 9 13 -5 -8
+Mid_PawnBlocked -13 9 -8 3 -1 -6
+Mid_PawnRam -3 2 -20 -2 6 1
+Mid_PawnOnBishopColor -3
+Mid_PawnZero -11
+Mid_Knight -18 -14 -30 -1 -21 -130
+Mid_KnightPair -5
+Mid_KnightStrong 1 0 -66 15 30 29
+Mid_KnightForpost 35 -14 40 16 14 -5
+Mid_KnightKingDist -2 -30
+Mid_KnightAndQueen -6
+Mid_Bishop -10 3 -21 -2 0 -135
+Mid_BishopPair -1
+Mid_BishopStrong 7 -11 -3 19 -13 26
+Mid_BishopMobility -54 20
+Mid_BishopKingDist 33 -9
+Mid_BishopAndRook 8
+Mid_Rook -12 -1 43 29 -2 -283
+Mid_RookPair -14
+Mid_RookMobility 0 23
+Mid_RookOpen 22
+Mid_Rook7th -8
+Mid_RookConnected -5
+Mid_RookKingDist 30 -38
+Mid_Queen -13 16 -3 0 -6 -476
+Mid_Queen7th -16
+Mid_QueenKingDist -3 -20
+Mid_King -26 6 -19 -29 -28 13
+Mid_KingPawnShield -45 -13
+Mid_KingPawnStorm -80 -81
+Mid_KingExposed -24 -22
+Mid_AttackKing -4 7
+Mid_AttackStronger 42
+Mid_AttackCenter 3
+Mid_Tempo 24
+End_Pawn -7 -3 11 25 -10 -10
+End_PawnPassed 10 -1 -13 52 -12 28
+End_PawnPassedFree 8 12 21 33 2 11
+End_PawnPassedBlocked -15 11 -70 -6 -25 -1
+End_PawnPassedConnected -14 7 2 35 -6 9
+End_PawnPassedSquare 7 7 73 70 1 9
+End_PawnPassedKingDist -18 35
+End_PawnDoubledIsolated -9 -1 8 -14 2 -18
+End_PawnDoubled 1 -11 -11 14 5 -2
+End_PawnIsolated 0 -2 2 -9 8 -8
+End_PawnBlocked 18 -5 -4 2 -2 -6
+End_PawnRam -2 1 14 -17 31 4
+End_PawnOnBishopColor -4
+End_PawnZero 11
+End_Knight -11 -27 -42 23 -13 -126
+End_KnightPair 10
+End_KnightStrong -34 27 -17 14 16 1
+End_KnightForpost -47 6 -17 -58 14 15
+End_KnightKingDist -24 5
+End_KnightAndQueen 16
+End_Bishop 16 -28 -2 26 -31 -114
+End_BishopPair 31
+End_BishopStrong 28 -33 -2 -48 48 20
+End_BishopMobility -2 35
+End_BishopKingDist -14 6
+End_BishopAndRook -3
+End_Rook 14 -3 -12 14 0 -127
+End_RookPair -8
+End_RookMobility -31 30
+End_RookOpen -1
+End_Rook7th 26
+End_RookConnected 2
+End_RookKingDist -5 19
+End_Queen -4 -30 0 -1 22 -329
+End_Queen7th 25
+End_QueenKingDist 32 -139
+End_King -39 -2 -45 27 -9 6
+End_KingPawnShield -3 -8
+End_KingPawnStorm -18 40
+End_KingExposed -59 -6
+End_AttackKing 8 17
+End_AttackStronger 46
+End_AttackCenter 1
+End_Tempo 8

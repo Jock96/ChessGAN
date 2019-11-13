@@ -46,6 +46,8 @@
         /// <returns>Возвращает флаг произошёл ли ход.</returns>
         public bool Move(string moveParameter)
         {
+            // TODO: Попробовать другой вариант.
+            return true;
             var separatorIndex = moveParameter.IndexOf(FieldModelConstants.SEPARATOR);
             var currentPosition = moveParameter.Remove(separatorIndex);
 

@@ -1,6 +1,7 @@
 ﻿namespace BL.Constants
 {
     using System;
+    using System.Collections.Generic;
 
     /// <summary>
     /// Константы модели поля.
@@ -20,6 +21,17 @@
               { "A3", "B3", "C3", "D3", "E3", "F3", "G3", "H3" },
               { "A2", "B2", "C2", "D2", "E2", "F2", "G2", "H2" },
               { "A1", "B1", "C1", "D1", "E1", "F1", "G1", "H1" }};
+
+        /// <summary>
+        /// Парсинг цифр в нумерацию.
+        /// </summary>
+        public static readonly Dictionary<string, int> SYMBOL_TO_NUMBER_DICTIONARY = new Dictionary<string, int>
+            { { "A", 1}, { "B", 2}, { "C", 3}, { "D", 4}, { "E", 5}, { "F", 6}, { "G", 7}, { "H", 8} };
+
+        /// <summary>
+        /// Валидные номера позиций.
+        /// </summary>
+        public static readonly List<int> VALID_NUMBERS = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8 };
 
         /// <summary>
         /// Размер матрицы поля.
