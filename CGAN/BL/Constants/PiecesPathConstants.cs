@@ -14,61 +14,61 @@ namespace BL.Constants
         /// <summary>
         /// Белая пешка.
         /// </summary>
-        public const string WHITE_PAWN = "\\WhitePawn.bmp";
+        public const string WHITE_PAWN = "\\WhitePawn.png";
 
         /// <summary>
         /// Чёрная пешка.
         /// </summary>
-        public const string BLACK_PAWN = "\\BlackPawn.bmp";
+        public const string BLACK_PAWN = "\\BlackPawn.png";
 
         /// <summary>
         /// Белый ферзь.
         /// </summary>
-        public const string WHITE_QUEEN = "\\WhiteQueen.bmp";
+        public const string WHITE_QUEEN = "\\WhiteQueen.png";
 
         /// <summary>
         /// Чёрный ферзь.
         /// </summary>
-        public const string BLACK_QUEEN = "\\BlackQueen.bmp";
+        public const string BLACK_QUEEN = "\\BlackQueen.png";
 
         /// <summary>
         /// Белая ладья.
         /// </summary>
-        public const string WHITE_ROOK = "\\WhiteRook.bmp";
+        public const string WHITE_ROOK = "\\WhiteRook.png";
 
         /// <summary>
         /// Чёрная ладья.
         /// </summary>
-        public const string BLACK_ROOK = "\\BlackRook.bmp";
+        public const string BLACK_ROOK = "\\BlackRook.png";
 
         /// <summary>
         /// Белый конь.
         /// </summary>
-        public const string WHITE_KNIGHT = "\\WhiteKnight.bmp";
+        public const string WHITE_KNIGHT = "\\WhiteKnight.png";
 
         /// <summary>
         /// Чёрный конь.
         /// </summary>
-        public const string BLACK_KNIGHT = "\\BlackKnight.bmp";
+        public const string BLACK_KNIGHT = "\\BlackKnight.png";
 
         /// <summary>
         /// Белый король.
         /// </summary>
-        public const string WHITE_KING = "\\WhiteKing.bmp";
+        public const string WHITE_KING = "\\WhiteKing.png";
 
         /// <summary>
         /// Чёрный король.
         /// </summary>
-        public const string BLACK_KING = "\\BlackKing.bmp";
+        public const string BLACK_KING = "\\BlackKing.png";
 
         /// <summary>
         /// Белый слон.
         /// </summary>
-        public const string WHITE_BISHOP = "\\WhiteBishop.bmp";
+        public const string WHITE_BISHOP = "\\WhiteBishop.png";
 
         /// <summary>
         /// Чёрный слон.
         /// </summary>
-        public const string BLACK_BISHOP = "\\BlackBishop.bmp";
+        public const string BLACK_BISHOP = "\\BlackBishop.png";
     }
 }

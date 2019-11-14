@@ -4,8 +4,16 @@
 
     using UI.ViewModels;
 
+    /// <summary>
+    /// Класс по работе с игровым полем.
+    /// </summary>
     public static class ChessFieldWorker
     {
+        /// <summary>
+        /// Переместить фигуры.
+        /// </summary>
+        /// <param name="turn">Ход.</param>
+        /// <param name="control">Вью-модель.</param>
         public static void SwapImages(string turn, ChessControlVM control)
         {
             var normilizeTurn = turn.ToUpper();

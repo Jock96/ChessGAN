@@ -11,12 +11,13 @@
         Title="Chess" Height="500" Width="750" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.35*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <control:ChessControl Grid.Column="1" DataContext="{Binding ChessControlVM}"/>
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"/>
                 <RowDefinition Height="0.25*"/>
                 <RowDefinition Height="0.25*"/>
                 <RowDefinition Height="*"/>
@@ -25,6 +26,8 @@
                     Command="{Binding TeachCommand}" CommandParameter="{Binding}"/>
             <Button Grid.Row="1" Margin="40, 20" Content="Играть"
                     Command="{Binding PlayCommand}" CommandParameter="{Binding}"/>
+            <Label Grid.Row="2" Content="{Binding Message}" HorizontalAlignment="Center" 
+                   HorizontalContentAlignment="Center"/>
             <!--<Button Grid.Row="2" Content="TestCommand" 
                     Command="{Binding SendMoveParametersCommand}"
                     CommandParameter="{Binding}"/>-->

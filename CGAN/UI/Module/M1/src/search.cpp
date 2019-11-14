@@ -682,11 +682,13 @@ bool IsGameOver(Position& pos, string& result, string& comment)
 			{
 				result = "0-1";
 				comment = "{Black mates}";
+				std::ofstream{ "Black mates.txt" };
 			}
 			else
 			{
 				result = "1-0";
 				comment = "{White mates}";
+				std::ofstream{ "White mates.txt" };
 			}
 		}
 		else

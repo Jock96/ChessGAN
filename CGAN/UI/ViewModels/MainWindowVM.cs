@@ -6,6 +6,9 @@
     using UI.Utils;
 
     using BL.Constants;
+    using System;
+    using BL.Helpers;
+    using System.IO;
 
     /// <summary>
     /// Вью-модель окна.
@@ -26,6 +29,24 @@
         }
 
         /// <summary>
+        /// Сообщение.
+        /// </summary>
+        private string _message;
+
+        /// <summary>
+        /// Сообщение.
+        /// </summary>
+        public string Message
+        {
+            get => _message;
+            set
+            {
+                _message = value;
+                OnPropertyChanged();
+            }
+        }
+
+        /// <summary>
         /// Обработчик хода модуля.
         /// </summary>
         /// <param name="sender">Отправитель.</param>
@@ -37,10 +58,59 @@
             if (moduleTurn.Contains(MessageConstants.UNKNOWN))
                 return;
 
+            if (OnMate())
+                return;
+
             var gamerTurn = ChessControlVM.Turn;
             ChessFieldWorker.SwapImages(gamerTurn, ChessControlVM);
+
             System.Threading.Thread.Sleep(500);
             ChessFieldWorker.SwapImages(moduleTurn, ChessControlVM);
+        }
+
+        /// <summary>
+        /// Проверить мат.
+        /// </summary>
+        private bool OnMate()
+        {
+            var debugPath = PathHelper.GetDebugPath();
+
+            var blackWinFile = $"{debugPath}{PathConstants.BLACK_WIN}";
+
+            if (File.Exists(blackWinFile))
+            {
+                KilAll(blackWinFile);
+                Message = MessageConstants.LOOSE;
+
+                return true;
+            }
+
+            var whiteWinFile = $"{debugPath}{PathConstants.WHITE_WIN}";
+
+            if (File.Exists(whiteWinFile))
+            {
+                KilAll(whiteWinFile);
+                Message = MessageConstants.WIN;
+
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Уничтожить всё.
+        /// </summary>
+        private void KilAll(string file)
+        {
+            Module.Kill();
+
+            var input = PathHelper.GetDebugInputPathByType(BL.Enums.IOTypes.Module);
+            var output = PathHelper.GetDebugOutputPathByType(BL.Enums.IOTypes.Module);
+
+            File.Delete(file);
+            File.Delete(input);
+            File.Delete(output);
         }
 
         /// <summary>

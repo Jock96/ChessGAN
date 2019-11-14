@@ -47,5 +47,30 @@
         /// Сообщение о неизвестной команде.
         /// </summary>
         public const string UNKNOWN = "Unknown command";
+
+        /// <summary>
+        /// Сообщение о поставленном мате.
+        /// </summary>
+        public const string MATES = "mates";
+
+        /// <summary>
+        /// Чёрные.
+        /// </summary>
+        public const string BLACK = "Black";
+
+        /// <summary>
+        /// Белые.
+        /// </summary>
+        public const string WHITE = "White";
+
+        /// <summary>
+        /// Поражение.
+        /// </summary>
+        public const string LOOSE = "Вы проиграли.";
+
+        /// <summary>
+        /// Победа.
+        /// </summary>
+        public const string WIN = "Вы победили.";
     }
 }

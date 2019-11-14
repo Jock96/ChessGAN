@@ -16,6 +16,16 @@
         public const string MODULE_PATH = "\\Module";
 
         /// <summary>
+        /// Чёрные победили.
+        /// </summary>
+        public const string BLACK_WIN = "\\Black mates.txt";
+
+        /// <summary>
+        /// Белые победили.
+        /// </summary>
+        public const string WHITE_WIN = "\\White mates.txt";
+
+        /// <summary>
         /// Путь модуля в бинарниках.
         /// </summary>
         public static readonly string MODULE_BIN_PATH = $"\\M1\\bin\\{MODULE_NAME}{EXTENSION}";

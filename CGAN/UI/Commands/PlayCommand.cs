@@ -41,7 +41,9 @@
             };
 
             process.Start();
+
             parameter.Module = process;
+            parameter.Message = string.Empty;
 
             var resources = PathHelper.GetResourcesPath();
 

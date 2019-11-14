@@ -1,0 +1,10 @@
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\bin\Debug\Scripts.exe.config
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\bin\Debug\Scripts.exe
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\bin\Debug\Scripts.pdb
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\obj\Debug\Scripts.exe
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\obj\Debug\Scripts.pdb
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\bin\Debug\BL.dll
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\bin\Debug\BL.pdb
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\obj\Debug\Scripts.csprojAssemblyReference.cache
+C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Scripts\obj\Debug\Scripts.csproj.CopyComplete

@@ -1,3 +1,4 @@
 ﻿cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
-  main.cpp
+  search.cpp
+bitboards.obj : warning LNK4075: эх єўшЄ√трхЄё  "/EDITANDCONTINUE" шч-чр ёяхЎшЇшърЎшш "/SAFESEH"
   GreKo.vcxproj -> C:\Лабы\Учёба (3 семестр)\ChessGAN\CGAN\Debug\GreKo.exe
